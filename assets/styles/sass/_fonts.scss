@@ -1,0 +1,62 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3233246, 2016-06-15T06:57:14-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: LFTEtica-Bold by TypeTogether
+ * URL: http://www.myfonts.com/fonts/type-together/etica/lft-etica-bold/
+ * Copyright: Copyright (c) 2010 by Leftloft, published by TypeTogether. All rights reserved.
+ *
+ * Webfont: LFTEtica-ExtraBoldItalic by TypeTogether
+ * URL: http://www.myfonts.com/fonts/type-together/etica/lft-etica-extra-bold-italic/
+ * Copyright: Copyright (c) 2009 by Leftloft, published by TypeTogether. All rights reserved.
+ *
+ * Webfont: LFTEtica-Regular by TypeTogether
+ * URL: http://www.myfonts.com/fonts/type-together/etica/lft-etica-regular/
+ * Copyright: Copyright (c) 2010 by Leftloft, published by TypeTogether. All rights reserved.
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3233246
+ * Licensed pageviews: 250,000
+ *
+ * © 2016 MyFonts Inc
+*/
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3155de");
+
+@font-face {
+  font-family: "Etica";
+  font-weight: 400;
+  src: 	url("../fonts/etica-regular.eot");
+  src: 	url("../fonts/etica-regular.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/etica-regular.woff2") format("woff2"),
+  url("../fonts/etica-regular.woff") format("woff"),
+  url("../fonts/etica-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Etica";
+  font-weight: 700;
+  src: 	url("../fonts/etica-bold.eot");
+  src: 	url("../fonts/etica-bold.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/etica-bold.woff2") format("woff2"),
+  url("../fonts/etica-bold.woff") format("woff"),
+  url("../fonts/etica-bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Etica";
+  font-weight: 800;
+  font-style: italic;
+  src: 	url("../fonts/etica-extrabold-italic.eot");
+  src: 	url("../fonts/etica-extrabold-italic.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/etica-extrabold-italic.woff2") format("woff2"),
+  url("../fonts/etica-extrabold-italic.woff") format("woff"),
+  url("../fonts/etica-extrabold-italic.ttf") format("truetype");
+}

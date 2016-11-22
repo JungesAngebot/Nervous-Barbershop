@@ -1,11 +1,18 @@
 @import '../../../bower_components/slick-carousel/slick/slick.scss';
 @import '../../../bower_components/slick-carousel/slick/slick-theme.scss';
+@import "fonts";
 
 
 
 html, body{
   margin: 0;
   background-color: #f2f2f2;
+}
+
+h1{
+  font-family: "Etica";
+  font-weight: 800;
+  font-style: italic;
 }
 
 :focus {

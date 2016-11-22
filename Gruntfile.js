@@ -3,7 +3,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         concurrent: {
             dev: {
-                tasks: ['watch', 'concat', 'sass'],
+                tasks: ['watch', 'concat', 'sass', 'autoprefixer'],
                 options: {
                     logConcurrentOutput: true
                 }
