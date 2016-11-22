@@ -66,7 +66,6 @@ $(document).ready(function() {
             }
         });
         filter = filter.slice(0,-2);
-        console.log(filter);
         $('.slick-slider-for-feeds').slick('slickUnfilter');
         $('.slick-slider-for-feeds').slick('slickFilter', filter);
     });
