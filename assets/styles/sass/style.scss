@@ -105,6 +105,10 @@ p{
 
     &.inactive{
       background-color: $grey;
+
+      &:hover{
+        background-color: $greyDark;
+      }
     }
   }
 }
