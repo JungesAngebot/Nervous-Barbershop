@@ -1,0 +1,11 @@
+
+node_modules/
+bower_components/
+.idea/
+
+assets/styles/css/style.css.map
+assets/styles/css/style.css
+css/style.css
+js/scripts.js
+
+*.map
