@@ -1,7 +1,7 @@
 @import '../../../bower_components/slick-carousel/slick/slick.scss';
 @import '../../../bower_components/slick-carousel/slick/slick-theme.scss';
 @import "fonts";
-
+@import "colors";
 
 
 html, body{
@@ -13,6 +13,7 @@ h1{
   font-family: "Etica";
   font-weight: 800;
   font-style: italic;
+  text-align: center;
 }
 
 :focus {
@@ -27,21 +28,25 @@ h1{
     height:50px;
     background-color: #fff;
     border: none;
+    font-family: "Etica";
+    font-weight: 700;
+    color: #fff;
+    font-size: 18px;
 
     &.links{
-      background-color: green;
+      background-color: $cyan;
     }
 
     &.neutral{
-      background-color: yellow;
+      background-color: $yellow;
     }
 
     &.rechts{
-      background-color: red;
+      background-color: $rose;
     }
 
     &.inactive{
-      background-color: darkgrey;
+      background-color: $grey;
     }
   }
 }
@@ -70,15 +75,15 @@ h1{
   margin: 20px;
 
   &.links{
-    background-color: green;
+    background-color: $cyan;
   }
 
   &.neutral{
-    background-color: yellow;
+    background-color: $yellow;
   }
 
   &.rechts{
-    background-color: red;
+    background-color: $rose;
   }
 }
 

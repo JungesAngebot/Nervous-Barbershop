@@ -1,0 +1,25 @@
+/* Colours Light */
+
+$white: #ffffff;
+$grey: #3b3a39;
+
+$cyan: #71c0a4;
+$yellow: #e7cd8a;
+$purple: #7869aa;
+$rose: #ee7a79;
+
+
+/* Colours Dark */
+
+$whiteDark: darken(#ffffff, 5%);
+$greyDark: darken(#3b3a39, 5%);
+
+$cyanDark: darken(#71c0a4, 5%);
+$yellowDark: darken(#e7cd8a, 5%);
+$purpleDark: darken(#7869aa, 5%);
+$roseDark: darken(#ee7a79, 5%);
+
+/* Link Colours */
+$link: lighten($grey, 20%);
+$link-hover: darken($grey, 20%);
+$nav-hover: darken($whiteDark, 5%);
