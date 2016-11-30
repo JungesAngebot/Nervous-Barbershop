@@ -55,6 +55,10 @@ h1{
   font-size: 36px;
 }
 
+h2{
+  text-align: center;
+}
+
 p{
   font-size: 16px;
   margin-bottom: 40px;
@@ -87,7 +91,7 @@ p{
       }
     }
 
-    &.neutral{
+    &.mitteLinks{
       background-color: $yellow;
 
       &:hover{
@@ -95,9 +99,17 @@ p{
       }
     }
 
+    &.mitteRechts{
+      background-color: $purple;
+
+      &:hover{
+        background-color: $purpleDark;
+      }
+    }
+
     &.rechts{
       background-color: $rose;
-      
+
       &:hover{
         background-color: $roseDark;
       }
@@ -172,7 +184,7 @@ p{
   width: 100%;
   height: 800px;
   margin: 20px;
-  color: #fff;
+  color: $greyDark;
   text-align: center;
   line-height: 800px;
 
@@ -180,8 +192,12 @@ p{
     background-color: $cyan;
   }
 
-  &.neutral{
+  &.mitteLinks{
     background-color: $yellow;
+  }
+
+  &.mitteRechts{
+    background-color: $purple;
   }
 
   &.rechts{
@@ -189,5 +205,9 @@ p{
   }
 }
 
+.overScrollVertical{
+  overflow-y: scroll;
+  overflow-x: auto;
+}
 
 

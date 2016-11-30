@@ -66,7 +66,14 @@ module.exports = function(grunt) {
                 src: [
                     'bower_components/jquery/dist/jquery.js',
                     'bower_components/slick-carousel/slick/slick.js',
-                    'assets/scripts/configs.js'
+                    'assets/scripts/sliderController.js',
+                    'assets/scripts/socialFeedController.js',
+                    'assets/scripts/configs.js',
+                    'bower_components/codebird-js/codebird.js',
+                    'bower_components/doT/doT.min.js',
+                    'bower_components/moment/min/moment.min.js',
+                    'bower_components/moment/locale/it.js',
+                    'bower_components/social-feed/js/jquery.socialfeed.js'
                 ],
                 dest: 'js/scripts.js'
             }

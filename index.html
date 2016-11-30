@@ -8,30 +8,41 @@
     <title>Burst</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/scripts.js"></script>
+
+    <!-- Social-feed css -->
+    <link href="bower_components/social-feed/css/jquery.socialfeed.css" rel="stylesheet" type="text/css">
+    <!-- font-awesome for social network icons -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 </head>
 <body>
-    <div class="nav">
-        <img class="logo" src="img/funk-logo.svg" alt="funk logo">
-    </div>
+    <!--<div class="nav">-->
+        <!--<img class="logo" src="img/funk-logo.svg" alt="funk logo">-->
+    <!--</div>-->
     <div class="content-container">
         <h1>Burst</h1>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+        <h2>Experiment a Facebook feed through 4 different political bubble filters</h2>
+
 
         <div class="button-container">
             <button class="links active" data-id="links" data-active="true">Links</button>
-            <button class="neutral active" data-id="neutral" data-active="true">Neutral</button>
+            <button class="mitteLinks active" data-id="mitteLinks" data-active="true">Mitte Links</button>
+            <button class="mitteRechts active" data-id="mitteRechts" data-active="true">Mitte Rechts</button>
             <button class="rechts active" data-id="rechts" data-active="true">Rechts</button>
+
         </div>
     </div>
 
 <div class="slick-slider-for-feeds">
-    <div class="feed links">LINKS
+    <div class="feed links overScrollVertical" id="feedLinks">
     </div>
 
-    <div class="feed neutral">NEUTRAL
+    <div class="feed mitteLinks overScrollVertical" id="feedMitteLinks">
     </div>
 
-    <div class="feed rechts">RECHTS
+    <div class="feed mitteRechts overScrollVertical" id="feedMitteRechts">
+    </div>
+
+    <div class="feed rechts overScrollVertical" id="feedRechts">
     </div>
 </div>
 
@@ -39,6 +50,8 @@
         <a href="https://www.funk.net/impressum">Impressum</a>
         <a href="https://www.funk.net/datenschutz">Datenschutz</a>
     </div>
-<script src="//localhost:35729/livereload.js"></script>
+
+<!--<script src="//localhost:35729/livereload.js"></script>-->
+
 </body>
 </html>
