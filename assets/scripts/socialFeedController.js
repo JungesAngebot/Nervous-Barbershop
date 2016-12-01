@@ -11,12 +11,12 @@ var socialFeedController = function () {
             facebook:{
                 accounts: ['@GegenDieAlternativefuerDeutschland','@AntifaschistischesInfoblatt','@neues eutschland','@junge.welt','@JungleWorld','@ruhrbarone','@Graswurzel.net'],
                 limit: 2,
-                access_token: ''
+                access_token: '652139488281223|6ab1dd4d9b3947ee7fc44dbd6dda36a2'
             },
             //  GENERAL SETTINGS
             length: 200,
             show_media: true,
-            template : "bower_components/social-feed/template.html",
+            template : "feed_template.html",
             //           // Moderation function - if returns false, template will have class hidden
             moderation: function(content) {
                 return (content.text) ? content.text.indexOf('fuck') == -1 : true;
@@ -33,12 +33,12 @@ var socialFeedController = function () {
             facebook:{
                 accounts: ['@SPD','@zeitonline','@Zett.home','@netzpolitik','@taz.kommune','@B90DieGruenen','@correctiv.org','@bund.bundesverband'],
                 limit: 2,
-                access_token: ''
+                access_token: '652139488281223|6ab1dd4d9b3947ee7fc44dbd6dda36a2'
             },
             //  GENERAL SETTINGS
             length: 200,
             show_media: true,
-            template : "bower_components/social-feed/template.html",
+            template : "feed_template.html",
             //           // Moderation function - if returns false, template will have class hidden
             moderation: function(content) {
                 return (content.text) ? content.text.indexOf('fuck') == -1 : true;
@@ -55,12 +55,12 @@ var socialFeedController = function () {
             facebook:{
                 accounts: ['@faz','@CiceroMagazin','@Bild','@focus.de','@Huffingtonpostde','@CDU','@StuttgarterZeitung','@zuGuttenberg'],
                 limit: 2,
-                access_token: ''
+                access_token: '652139488281223|6ab1dd4d9b3947ee7fc44dbd6dda36a2'
             },
             //  GENERAL SETTINGS
             length: 200,
             show_media: true,
-            template : "bower_components/social-feed/template.html",
+            template : "feed_template.html",
             //           // Moderation function - if returns false, template will have class hidden
             moderation: function(content) {
                 return (content.text) ? content.text.indexOf('fuck') == -1 : true;
@@ -77,12 +77,12 @@ var socialFeedController = function () {
             facebook:{
                 accounts: ['@Alternativefuerde','@jungefreiheit','@identitaere','@Dr.Frauke.Petry','@BeatrixVonStorch','@Luegenpress','@ferieninsyrien','@fuer.die.heimat'],
                 limit: 2,
-                access_token: ''
+                access_token: '652139488281223|6ab1dd4d9b3947ee7fc44dbd6dda36a2'
             },
             //  GENERAL SETTINGS
             length: 200,
             show_media: true,
-            template : "bower_components/social-feed/template.html",
+            template : "feed_template.html",
             //           // Moderation function - if returns false, template will have class hidden
             moderation: function(content) {
                 return (content.text) ? content.text.indexOf('fuck') == -1 : true;

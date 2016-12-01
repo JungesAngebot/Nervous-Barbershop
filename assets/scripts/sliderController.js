@@ -4,6 +4,18 @@
 
 var sliderController = function(context) {
 
+    function checkSlickNoSlide() {
+        var elm = $('.slick-slider-for-feeds'),
+            getSlick = elm.slick('getSlick');
+
+        if(getSlick.slideCount <= getSlick.options.slidesToShow) {
+            elm.addClass('slick-no-slide');
+        }
+        else {
+            elm.removeClass('slick-no-slide');
+        }
+    }
+
     function resizeSlider() {
 
         $('button').on('click', function() {
@@ -30,9 +42,16 @@ var sliderController = function(context) {
             $('.slick-slider-for-feeds').slick('slickUnfilter');
             $('.slick-slider-for-feeds').slick('slickFilter', filter);
 
+            checkSlickNoSlide();
+        });
+
+        $('.slick-slider-for-feeds').on('afterChange', function(){
+            checkSlickNoSlide();
         });
 
     }
+
+
 
     return {
         resizeSlider : resizeSlider

@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "jquery": "latest",
-    "slick-carousel": "latest"
+    "slick-carousel": "latest",
+    "social-feed": "^0.1.2"
   }
 }

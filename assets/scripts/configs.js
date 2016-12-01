@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+
+
     $('.slick-slider-for-feeds').slick({
         infinite: false,
         lazyLoad: 'progressive',
@@ -9,6 +11,7 @@ $(document).ready(function() {
         slidesToScroll: 1,
         touchThreshold: 10,
         speed: 150,
+        //centerMode: true,
         prevArrow: '<i class="slick-prev-custom blop icon icon_arrow-left"></i>',
         nextArrow: '<i class="slick-next-custom blop icon icon_arrow-right"></i>',
         //mobileFirst: true,
@@ -49,10 +52,14 @@ $(document).ready(function() {
         ]
     });
 
-
-
     new sliderController().resizeSlider();
 
     new socialFeedController().setSocialFeeds();
+
+    $('.burger-icon').on('click', function() {
+        $('.off-canvas').toggleClass('right');
+        $(this).find('i').toggleClass('icon_hamburger icon_close');
+        $('.nav').toggleClass('fixed');
+    });
 
 });

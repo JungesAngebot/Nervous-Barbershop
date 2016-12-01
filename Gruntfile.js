@@ -72,7 +72,7 @@ module.exports = function(grunt) {
                     'bower_components/codebird-js/codebird.js',
                     'bower_components/doT/doT.min.js',
                     'bower_components/moment/min/moment.min.js',
-                    'bower_components/moment/locale/it.js',
+                    'bower_components/moment/locale/de.js',
                     'bower_components/social-feed/js/jquery.socialfeed.js'
                 ],
                 dest: 'js/scripts.js'
