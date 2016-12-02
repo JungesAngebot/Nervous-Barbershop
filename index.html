@@ -45,7 +45,9 @@
 </head>
 <body>
     <div class="nav">
-        <img class="logo" src="img/funk-logo.svg" alt="funk logo">
+        <a href="/">
+            <img class="logo" src="img/funk-logo.svg" alt="funk logo">
+        </a>
         <ul>
             <li><a href="#">Seite 1</a></li>
             <li><a href="#">Seite 2</a></li>
@@ -60,33 +62,64 @@
             <li><a href="#">Seite 2</a></li>
         </ul>
     </div>
-    <div class="content-container">
-        <h1>Burst</h1>
-        <h2>Experiment a Facebook feed through 4 different political bubble filters</h2>
+    <div id="fullpage">
+        <div class="section">
+            <div class="content-container">
+                <h1>Ungefiltert</h1>
+               <p>Soziale Netzwerke wie Facebook helfen uns dabei die tägliche Informationsflut zu bündeln. Sie lernen aus unserem Verhalten und zeigen, was für uns relevant ist. Dabei gehen andere Blickwinkel jedoch verloren - ohne dass wir es merken. Wie wirken sich unsere “Social-Media-Blasen” auf unsere Meinungsbildung aus? </p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="content-container">
+                <div class="button-container">
+                    <button class="links active" data-id="links" data-active="true">Links</button>
+                    <button class="mitteLinks active" data-id="mitteLinks" data-active="true">Mitte Links</button>
+                    <button class="mitteRechts active" data-id="mitteRechts" data-active="true">Mitte Rechts</button>
+                    <button class="rechts active" data-id="rechts" data-active="true">Rechts</button>
+                </div>
+            </div>
 
+            <div class="slick-slider-for-feeds">
+                <div class="feed links ">
+                    <div class="feed-scroll-wrapper">
+                        <div id="feedLinks"></div>
+                    </div>
+                </div>
 
-        <div class="button-container">
-            <button class="links active" data-id="links" data-active="true">Links</button>
-            <button class="mitteLinks active" data-id="mitteLinks" data-active="true">Mitte Links</button>
-            <button class="mitteRechts active" data-id="mitteRechts" data-active="true">Mitte Rechts</button>
-            <button class="rechts active" data-id="rechts" data-active="true">Rechts</button>
+                <div class="feed mitteLinks ">
+                    <div class="feed-scroll-wrapper">
+                        <div id="feedMitteLinks"></div>
+                    </div>
+                </div>
 
+                <div class="feed mitteRechts ">
+                    <div class="feed-scroll-wrapper">
+                        <div id="feedMitteRechts"></div>
+                    </div>
+                </div>
+
+                <div class="feed rechts ">
+                    <div class="feed-scroll-wrapper">
+                        <div id="feedRechts"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="content-container">
+                <h1>Hast du dich auch schon mal gefragt wie die Welt für jemand anderen aussieht?</h1>
+                <p>Facebook wird immer wichtiger für die politische Debatte: Zumindest ist das die Lehre, die aus der US-Wahl gezogen wird. Über Soziale Netzwerke wurden Nachrichten aus unseriösen Quellen verteilt und so Gerüchte und sogar Lügen gestreut. Aber noch mal einen Schritt zurück:
+                    Unser Facebook Feed ist voll von Posts unserer Freunde, deren Bilder wir kommentieren und deren Links wir anklicken. Dazu kommen Pages, die wir geliket und Werbung von Produkten, die wir zuletzt online geshoppt haben. So lernt Facebook was wir mögen, wie wir die Welt sehen und zeigt uns fortan auch nur noch genau das. Dadurch befinden uns in einer „Filterblase“, die andere Meinungen auslässt und unsere eigene Meinung scheinbar hervorhebt.
+                    Filterblasen sind nicht ausschließlich schlecht! (verlinken auf Vorteile) Sie lenken den Blick aber in eine bestimmte Richtung. Um die eigene Blase für einen Moment zu verlassen, haben wir vier verschiedene Facebook Feeds zusammengestellt.
+                    Jeder Feed besteht aus der gleichen Anzahl an Quellen. Hierbei handelt es sich um Medien, Parteien oder politische Persönlichkeiten, die nach dem folgenden Verständnis von „Links“ und „Rechts“ eingeordnet wurden:</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="content-container">
+                Some section
+            </div>
         </div>
     </div>
-
-<div class="slick-slider-for-feeds">
-    <div class="feed links overScrollVertical" id="feedLinks">
-    </div>
-
-    <div class="feed mitteLinks overScrollVertical" id="feedMitteLinks">
-    </div>
-
-    <div class="feed mitteRechts overScrollVertical" id="feedMitteRechts">
-    </div>
-
-    <div class="feed rechts overScrollVertical" id="feedRechts">
-    </div>
-</div>
 
     <div class="footer">
         <a href="https://www.funk.net/impressum">Impressum</a>

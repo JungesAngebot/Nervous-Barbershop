@@ -3,6 +3,7 @@
 @import "fonts";
 @import "icons";
 @import "colors";
+@import "fullpage";
 
 
 body{
@@ -23,7 +24,8 @@ body{
 
 .nav{
   box-sizing: border-box;
-  position: relative;
+  position: fixed;
+  top: 0;
   width: 100%;
   height: 70px;
   z-index: 5000;
@@ -119,8 +121,10 @@ body{
 }
 
 .footer{
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  height: 70px;
+  height: 40px;
   z-index: 5000;
   padding: 0 50px;
   background-color: $greyDark;
@@ -129,13 +133,21 @@ body{
     font-size: 16px;
     color: #ffffff;
     padding: 0 30px;
-    line-height: 70px;
+    line-height: 40px;
     text-decoration: none;
   }
 }
 
+.content-wrapper{
+  margin-top: 100px;
+  min-height: calc(100vh - 140px);
+}
+
 .content-container{
   padding: 0 50px;
+  max-width: 800px;
+  margin: 0 auto;
+
   @media screen and (max-width: 480px) {
     padding: 0 25px;
   }
@@ -233,7 +245,8 @@ p{
 }
 
 .slick-slider-for-feeds{
-  min-height: 850px;
+  //min-height: 850px;
+
   .slick-list{
     padding-left: 2rem;
     padding-right: 2rem;
@@ -290,27 +303,50 @@ p{
 
 .feed{
   width: 100%;
-  height: 800px;
+  height: calc(75vh - 100px);
   margin: 20px;
+  margin-bottom: 0;
   color: $greyDark;
-  padding: 25px;
+  padding: 0 25px;
   box-sizing: border-box;
   max-width: 750px;
+  overflow: hidden;
 
   &.links{
     background-color: $cyan;
+    border-top: 25px solid $cyan;
+    border-bottom: 25px solid $cyan;
   }
 
   &.mitteLinks{
     background-color: $yellow;
+    border-top: 25px solid $yellow;
+    border-bottom: 25px solid $yellow;
   }
 
   &.mitteRechts{
     background-color: $purple;
+    border-top: 25px solid $purple;
+    border-bottom: 25px solid $purple;
   }
 
   &.rechts{
     background-color: $rose;
+    border-top: 25px solid $rose;
+    border-bottom: 25px solid $rose;
+  }
+
+  .feed-scroll-wrapper{
+    height: 100%;
+    padding-right: 20px;
+    width: calc(100% + 20px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    @media screen and (max-width: 1024px) {
+      padding-right: 0px;
+      width: 100%;
+    }
   }
 }
 

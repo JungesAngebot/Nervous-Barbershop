@@ -62,4 +62,15 @@ $(document).ready(function() {
         $('.nav').toggleClass('fixed');
     });
 
+    //FULLPAGE
+    $('#fullpage').fullpage({
+        normalScrollElements: '.feed-scroll-wrapper',
+        normalScrollElementTouchThreshold: 10,
+        verticalCentered: true,
+        fixedElements: '.nav, .footer',
+        paddingTop: '70px',
+        paddingBottom: '40px',
+        scrollOverflow: true
+    });
+
 });
