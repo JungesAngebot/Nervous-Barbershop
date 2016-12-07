@@ -63,6 +63,10 @@ body{
         color: #fff;
         margin-left: 24px;
         text-decoration: none;
+
+        &.active{
+          border-bottom: 3px solid $white;
+        }
       }
     }
   }
@@ -102,15 +106,19 @@ body{
     list-style: none;
     margin: 0;
     padding: 0;
+    margin-top: 20px;
     li{
-      margin-bottom: 10px;
+      margin-bottom: 20px;
       a{
         font-family: "Etica";
         font-weight: 300;
-        font-size: 35px;
+        font-size: 30px;
         color: $greyDark;
         text-decoration: none;
-        margin-bottom: 20px;
+
+        &.active{
+          border-bottom: 3px solid $greyDark;
+        }
       }
     }
   }
@@ -121,7 +129,7 @@ body{
 }
 
 .footer{
-  position: fixed;
+  box-sizing: border-box;
   bottom: 0;
   width: 100%;
   height: 40px;
@@ -157,7 +165,8 @@ h1{
   font-weight: 800;
   font-style: italic;
   text-align: center;
-  font-size: 36px;
+  font-size: 46px;
+  letter-spacing: 2px;
 }
 
 h2{
@@ -166,7 +175,47 @@ h2{
 
 p{
   font-size: 16px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
+  line-height: 30px;
+}
+
+.scroll-down{
+  position: absolute;
+  width: 100%;
+  bottom: 10%;
+  left: 0;
+  text-align: center;
+  font-size: 40px;
+
+  animation-name: scroll_down;
+  animation-duration: .6s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes scroll_down {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(30px);
+  }
+}
+
+.white_text{
+  color: $whiteDark;
+}
+
+.section{
+  .overlay{
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
 }
 
 :focus {
@@ -235,14 +284,15 @@ p{
     }
 
     &.inactive{
-      background-color: $grey;
+      background-color: darken(#ffffff, 20%);
 
       &:hover{
-        background-color: $greyDark;
+        background-color: darken(#ffffff, 30%);
       }
     }
   }
 }
+
 
 .slick-slider-for-feeds{
   //min-height: 850px;
@@ -292,6 +342,7 @@ p{
   height: 40px;
   text-align: center;
   color: white;
+  cursor: pointer;
 }
 
 .slick-prev-custom {
@@ -303,7 +354,7 @@ p{
 
 .feed{
   width: 100%;
-  height: calc(75vh - 100px);
+  height: calc(80vh - 100px);
   margin: 20px;
   margin-bottom: 0;
   color: $greyDark;
@@ -375,4 +426,38 @@ span.pull-right{
   float: none;
   display: inline-block;
   width: 100% !important;
+}
+
+
+.twitter_feed{
+  width: 100%;
+  height: calc(50vh - 100px);
+  margin: 20px;
+  margin-bottom: 0;
+  color: $greyDark;
+  padding: 0 25px;
+  box-sizing: border-box;
+  max-width: 750px;
+  overflow: hidden;
+  background-color: $purple;
+  border-top: 25px solid $purple;
+  border-bottom: 25px solid $purple;
+
+  .feed-scroll-wrapper{
+    height: 100%;
+    padding-right: 20px;
+    width: calc(100% + 20px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    @media screen and (max-width: 1024px) {
+      padding-right: 0px;
+      width: 100%;
+    }
+  }
+}
+
+
+.spritespin {
+  width: 50vw;
 }

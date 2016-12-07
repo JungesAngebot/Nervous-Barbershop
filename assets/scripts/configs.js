@@ -70,7 +70,22 @@ $(document).ready(function() {
         fixedElements: '.nav, .footer',
         paddingTop: '70px',
         paddingBottom: '40px',
-        scrollOverflow: true
+        scrollOverflow: false,
+        autoScrolling: false,
+        fitToSection: false,
+    });
+
+
+    //Sprite
+    $(function(){
+        $('.spritespin').spritespin({
+            width: 1920,
+            height: 1080,
+            source: SpriteSpin.sourceArray('img/sprite/Text2_Filterblase{frame}.png', { frame: [27,100], digits: 3 }),
+            sense: 0,
+            behavior: '',
+            responsive: true
+        });
     });
 
 });

@@ -94,6 +94,30 @@ var socialFeedController = function () {
             // }
         });
 
+
+        $('#tweets').socialfeed({
+            // TWITTER
+            twitter:{
+                accounts: ['#ungefiltert'],                      //Array: Specify a list of accounts from which to pull tweets
+                limit: 10,                                   //Integer: max number of tweets to load
+                consumer_key: 'Kra5v3MXSNUrETB9EI1zCu1rW',          //String: consumer key. make sure to have your app read-only
+                consumer_secret: 'tlGzCdKT9WAU8DIONOok15EMbMOoGciKWAhSrz285kH54jt3qE' //String: consumer secret key. make sure to have your app read-only
+            },
+            //  GENERAL SETTINGS
+            length: 200,
+            show_media: true,
+            template : "feed_template.html",
+            //           // Moderation function - if returns false, template will have class hidden
+            moderation: function(content) {
+                return (content.text) ? content.text.indexOf('fuck') == -1 : true;
+            }
+            // //update_period: 5000,
+            // // When all the posts are collected and displayed - this function is evoked
+            // callback: function() {
+            //   console.log('all posts are collected');
+            // }
+        });
+
     }
 
     return {

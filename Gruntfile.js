@@ -75,7 +75,9 @@ module.exports = function(grunt) {
                     'bower_components/moment/locale/de.js',
                     'bower_components/fullpage.js/vendors/scrolloverflow.js',
                     'bower_components/fullpage.js/dist/jquery.fullpage.js',
-                    'bower_components/social-feed/js/jquery.socialfeed.js'
+                    'bower_components/social-feed/js/jquery.socialfeed.js',
+                    'bower_components/spritespin/release/spritespin.js',
+                    'bower_components/vide/dist/jquery.vide.js'
                 ],
                 dest: 'js/scripts.js'
             }

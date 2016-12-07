@@ -22,5 +22,8 @@
     "node-sass": "^3.13.0"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "grunt-contrib-imagemin": "^1.0.1"
+  }
 }
