@@ -107,9 +107,31 @@ module.exports = function(grunt) {
                 }
             }
         },
+
+        image: {                          // Task
+            dynamic: {
+                options: {
+                    pngquant: true,
+                    optipng: false,
+                    zopflipng: true,
+                    jpegRecompress: false,
+                    jpegoptim: true,
+                    mozjpeg: true,
+                    gifsicle: true,
+                    svgo: true
+                },
+                files: [{
+                    expand: true,                  // Enable dynamic expansion
+                    cwd: 'img/sprite_original/',                   // Src matches are relative to this path
+                    src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
+                    dest: 'img/sprite/'                  // Destination path prefix
+                }]
+            }
+        }
     });
 
     grunt.registerTask('default', ['concurrent']);
+    grunt.registerTask('png', ['image']);
 
     //grunt.registerTask('productive', ['sass', 'autoprefixer', 'cssmin', 'concat', 'uglify', 'copy']);
 
