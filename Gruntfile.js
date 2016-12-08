@@ -85,7 +85,7 @@ module.exports = function(grunt) {
         copy: {
             dist: {
                 files: [
-                    {expand: true, src: ['index.html', 'js/**/*.*', 'css/**/*.*'], dest: 'build/', filter: 'isFile'}
+                    {expand: true, src: ['*.html', 'js/**/*.*', 'css/**/*.*','fonts/**/*.*', 'img/**/*.*', 'video/**/*.*'], dest: 'build/', filter: 'isFile'}
                 ]
             }
         },
@@ -132,6 +132,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask('default', ['concurrent']);
     grunt.registerTask('png', ['image']);
+    grunt.registerTask('productive', ['concat', 'sass', 'autoprefixer', 'cssmin', 'uglify', 'copy']);
 
     //grunt.registerTask('productive', ['sass', 'autoprefixer', 'cssmin', 'concat', 'uglify', 'copy']);
 

@@ -105,7 +105,7 @@ var socialFeedController = function () {
             },
             //  GENERAL SETTINGS
             length: 200,
-            show_media: true,
+            show_media: false,
             template : "feed_template.html",
             //           // Moderation function - if returns false, template will have class hidden
             moderation: function(content) {
