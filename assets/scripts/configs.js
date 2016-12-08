@@ -76,19 +76,6 @@ $(document).ready(function() {
     });
 
 
-    //Sprite
-/*    $(function(){
-        $('.spritespin').spritespin({
-            width: 1920,
-            height: 1080,
-            source: SpriteSpin.sourceArray('img/sprite/Text2_Filterblase{frame}.png', { frame: [27,100], digits: 3 }),
-            sense: 0,
-            behavior: '',
-            preloadCount: 10,
-            frameTime: 80,
-            responsive: true
 
-        });
-    });*/
 
 });

@@ -132,7 +132,7 @@ body{
   box-sizing: border-box;
   bottom: 0;
   width: 100%;
-  height: 40px;
+  min-height: 40px;
   z-index: 5000;
   padding: 0 50px;
   background-color: $greyDark;
@@ -159,6 +159,34 @@ body{
   @media screen and (max-width: 480px) {
     padding: 0 25px;
   }
+
+  &.big{
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .content-left, .content-right{
+    width: 49%;
+    float: left;
+    flex-grow: 1;
+    padding: 20px;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+      padding: 0;
+   }
+
+  }
+
+  .content-left{
+    h1{
+      text-align: left;
+    }
+  }
 }
 h1{
   font-family: "Etica";
@@ -177,6 +205,13 @@ p{
   font-size: 16px;
   margin-bottom: 10px;
   line-height: 30px;
+}
+
+a{
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 30px;
+  color: $greyDark;
 }
 
 .scroll-down{
@@ -389,10 +424,11 @@ p{
 
   .feed-scroll-wrapper{
     height: 100%;
-    padding-right: 20px;
-    width: calc(100% + 20px);
+    //padding-right: 20px;
+    //width: calc(100% + 20px);
     overflow-y: scroll;
     overflow-x: hidden;
+    width: 100%;
 
     @media screen and (max-width: 1024px) {
       padding-right: 0px;
@@ -432,8 +468,9 @@ span.pull-right{
 .twitter_feed{
   width: 100%;
   height: calc(50vh - 100px);
-  margin: 20px;
+  margin: 0 auto;
   margin-bottom: 0;
+  margin-top: 20px;
   color: $greyDark;
   padding: 0 25px;
   box-sizing: border-box;
@@ -445,8 +482,8 @@ span.pull-right{
 
   .feed-scroll-wrapper{
     height: 100%;
-    padding-right: 20px;
-    width: calc(100% + 20px);
+    //padding-right: 20px;
+    width: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
 
@@ -457,7 +494,23 @@ span.pull-right{
   }
 }
 
+#twitter_section{
+  background-image: url("../img/Collage_User_Kommentare.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+
+  @media screen and (max-width: 1500px) {
+    background-position: 50% 100%;
+  }
+  @media screen and (max-width: 1200px) {
+    background-position: 50% 250%;
+  }
+  @media screen and (max-width: 768px) {
+    background-position: 80% 290%;
+  }
+}
+
 
 .spritespin {
-  width: 50vw;
+  width: 100%;
 }
