@@ -9,9 +9,9 @@ var socialFeedController = function () {
         $('#feedLinks').socialfeed({
             // FACEBOOK
             facebook:{
-                accounts: ['@GegenDieAlternativefuerDeutschland','@AntifaschistischesInfoblatt','@neues eutschland','@junge.welt','@JungleWorld','@ruhrbarone','@Graswurzel.net'],
+                accounts: ['@linkspartei','@AntifaschistischesInfoblatt','@neues eutschland','@junge.welt','@JungleWorld','@sahra.wagenknecht','@Graswurzel.net'],
                 limit: 2,
-                access_token: '652139488281223|6ab1dd4d9b3947ee7fc44dbd6dda36a2'
+                access_token: ''
             },
             //  GENERAL SETTINGS
             length: 200,
@@ -33,7 +33,7 @@ var socialFeedController = function () {
             facebook:{
                 accounts: ['@SPD','@zeitonline','@Zett.home','@netzpolitik','@taz.kommune','@B90DieGruenen','@correctiv.org','@bund.bundesverband'],
                 limit: 2,
-                access_token: '652139488281223|6ab1dd4d9b3947ee7fc44dbd6dda36a2'
+                access_token: ''
             },
             //  GENERAL SETTINGS
             length: 200,
@@ -53,9 +53,9 @@ var socialFeedController = function () {
         $('#feedMitteRechts').socialfeed({
             // FACEBOOK
             facebook:{
-                accounts: ['@faz','@CiceroMagazin','@Bild','@focus.de','@Huffingtonpostde','@CDU','@StuttgarterZeitung','@zuGuttenberg'],
+                accounts: ['@faz','@CiceroMagazin','@Bild','@focus.de','@Huffingtonpostde','@CDU','@StuttgarterZeitung','@bundesjugendring','@jugend.im.dgb'],
                 limit: 2,
-                access_token: '652139488281223|6ab1dd4d9b3947ee7fc44dbd6dda36a2'
+                access_token: ''
             },
             //  GENERAL SETTINGS
             length: 200,
@@ -77,7 +77,7 @@ var socialFeedController = function () {
             facebook:{
                 accounts: ['@Alternativefuerde','@jungefreiheit','@identitaere','@Dr.Frauke.Petry','@BeatrixVonStorch','@Luegenpress','@ferieninsyrien','@fuer.die.heimat'],
                 limit: 2,
-                access_token: '652139488281223|6ab1dd4d9b3947ee7fc44dbd6dda36a2'
+                access_token: ''
             },
             //  GENERAL SETTINGS
             length: 200,

@@ -20,6 +20,7 @@
     "slick-carousel": "latest",
     "social-feed": "^0.1.2",
     "fullpage.js": "^2.8.9",
-    "vide": "^0.5.1"
+    "vide": "^0.5.1",
+    "spritespin":"latest"
   }
 }
