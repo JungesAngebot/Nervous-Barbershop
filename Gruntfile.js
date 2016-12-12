@@ -77,7 +77,7 @@ module.exports = function(grunt) {
                     'bower_components/fullpage.js/dist/jquery.fullpage.js',
                     'bower_components/social-feed/js/jquery.socialfeed.js',
                     'bower_components/spritespin/release/spritespin.js',
-                    'bower_components/vide/dist/jquery.vide.js'
+                    //'bower_components/vide/dist/jquery.vide.js'
                 ],
                 dest: 'js/scripts.js'
             }
