@@ -192,7 +192,7 @@ h1{
   font-family: "Etica";
   font-weight: 800;
   font-style: italic;
-  text-align: center;
+  text-align: left;
   font-size: 46px;
   letter-spacing: 2px;
 }
@@ -221,6 +221,10 @@ a{
   left: 0;
   text-align: center;
   font-size: 40px;
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
 
   animation-name: scroll_down;
   animation-duration: .6s;
@@ -464,6 +468,21 @@ span.pull-right{
   width: 100% !important;
 }
 
+#header_section{
+  background-image: url("../img/header_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.iframes{
+  margin: 0 auto;
+
+  iframe{
+    margin: 0 10px;
+    max-width: 100%;
+  }
+}
 
 .twitter_feed{
   width: 100%;
@@ -509,6 +528,36 @@ span.pull-right{
     background-position: 80% 290%;
   }
 }*/
+
+#quellen{
+  h2{
+    text-align: left;
+    border-bottom: 3px solid $greyDark;
+    margin-top: 40px;
+  }
+}
+
+.dot-container{
+
+  a{
+    color: transparent;
+  }
+  .dot{
+    background-color: $purple;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    color: #fff;
+
+    .icon{
+      font-size: 20px;
+      margin-top: -3px;
+      margin-left: 0.5px;
+    }
+  }
+}
 
 
 .spritespin {
