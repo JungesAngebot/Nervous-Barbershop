@@ -42,8 +42,44 @@
     <meta name="apple-mobile-web-app-title" content="Ungefiltert | funk">
     <meta name="application-name" content="Ungefiltert | funk">
     <meta name="theme-color" content="#262525">
+
+    <script type="text/javascript" src="//script.ioam.de/iam.js"></script>
+    <script type="text/javascript">
+        var isStringDetected = function(value) {
+            var regexp = new RegExp(value, 'gi')
+            return (regexp.test(navigator.appVersion) || regexp.test(navigator.userAgent)) ? true : false
+        }
+        var isTablet = function () {
+            return (isStringDetected('iPad|Windows NT|Kindle|PlayBook') || (isStringDetected('Android') && !isStringDetected('Mobile'))) ? true : false
+        }
+        var isMobile = (!isTablet() && 'undefined' != typeof window.orientation)
+        iam_data = {
+            st: (isMobile ? 'mobjunge' : 'jungesan'),
+            cp: (isMobile ? 'Seite/mobil' : 'Seite/stationaer')
+        }
+        iom.c(iam_data, 1)
+    </script>
+    <script type="text/javascript" src="//tag.aticdn.net/570592/smarttag.js"></script>
 </head>
 <body>
+<script type="text/javascript">
+    var tag = new ATInternet.Tracker.Tag();
+    tag.page.set({
+        name: 'About',
+        chapter1: 'Ungefiltert',
+        level2: 4
+    });
+    tag.customVars.set({
+        site: {
+            1: 'Ungefiltert-About',
+            2: '7',
+            3: 'Ungefiltert-About',
+            4: (isMobile ? '2' : '1')
+        }
+    });
+    tag.dispatch();
+</script>
+
     <div class="nav">
         <a href="index.html">
             <img class="logo" src="img/funk-logo.svg" alt="funk logo">
