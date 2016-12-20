@@ -11,7 +11,7 @@ var socialFeedController = function () {
             facebook:{
                 accounts: ['@183921262475','@derfunke.de','@linkspartei','@AntifaschistischesInfoblatt','@Rote-Flora','@neuesdeutschland','@junge.welt','@JungleWorld','@sahra.wagenknecht','@Graswurzel.net', '@anarchistischesnetzwerksuedwest'],
                 limit: 2,
-                access_token: '652139488281223|6ab1dd4d9b3947ee7fc44dbd6dda36a2'
+                access_token: '1124402471013337|SgTXRkarMD3bKzygz91g-woMp_s'
             },
             //  GENERAL SETTINGS
             length: 200,
@@ -33,7 +33,7 @@ var socialFeedController = function () {
             facebook:{
                 accounts: ['@SPD','@zeitonline','@Zett.home','@tagesspiegel','@netzpolitik','@taz.kommune','@B90DieGruenen','@correctiv.org','@bund.bundesverband','@kban.Kampagne','@ihre.sz'],
                 limit: 2,
-                access_token: '652139488281223|6ab1dd4d9b3947ee7fc44dbd6dda36a2'
+                access_token: '1099490190163335|Qe6fA2E2Ha-o_280ZnZ3ZaF7QRs'
             },
             //  GENERAL SETTINGS
             length: 200,
@@ -55,7 +55,7 @@ var socialFeedController = function () {
             facebook:{
                 accounts: ['@faz','@CiceroMagazin','@Bild','@welt','@focus.de','@Huffingtonpostde','@CDU','@StuttgarterZeitung','@bundesjugendring','@abendblatt','@rponline','@tichyseinblick'],
                 limit: 2,
-                access_token: '652139488281223|6ab1dd4d9b3947ee7fc44dbd6dda36a2'
+                access_token: '1207091042714005|EENQw_m86BlSXJijVdUy-9SYbJ8'
             },
             //  GENERAL SETTINGS
             length: 200,
@@ -77,7 +77,7 @@ var socialFeedController = function () {
             facebook:{
                 accounts: ['@Alternativefuerde','@jungefreiheit','@npd.de','@identitaere','@Dr.Frauke.Petry','@BeatrixVonStorch','@Luegenpress','@fuer.die.heimat','@legida.eu','@politikversagen','@contraonlinemagazin','@Compact.Magazin'],
                 limit: 2,
-                access_token: '652139488281223|6ab1dd4d9b3947ee7fc44dbd6dda36a2'
+                access_token: '230810964010458|t6LLI4VxlgjkOCw7kEWp9-WtK2w'
             },
             //  GENERAL SETTINGS
             length: 200,
