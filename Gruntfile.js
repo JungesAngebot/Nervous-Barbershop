@@ -66,7 +66,18 @@ module.exports = function(grunt) {
                 src: [
                     'bower_components/jquery/dist/jquery.js',
                     'bower_components/slick-carousel/slick/slick.js',
-                    'assets/scripts/configs.js'
+                    'assets/scripts/sliderController.js',
+                    'assets/scripts/socialFeedController.js',
+                    'assets/scripts/configs.js',
+                    'bower_components/codebird-js/codebird.js',
+                    'bower_components/doT/doT.min.js',
+                    'bower_components/moment/min/moment.min.js',
+                    'bower_components/moment/locale/de.js',
+                    'bower_components/fullpage.js/vendors/scrolloverflow.js',
+                    'bower_components/fullpage.js/dist/jquery.fullpage.js',
+                    'bower_components/social-feed/js/jquery.socialfeed.js',
+                    'bower_components/spritespin/release/spritespin.js',
+                    //'bower_components/vide/dist/jquery.vide.js'
                 ],
                 dest: 'js/scripts.js'
             }
@@ -74,7 +85,7 @@ module.exports = function(grunt) {
         copy: {
             dist: {
                 files: [
-                    {expand: true, src: ['index.html', 'js/**/*.*', 'css/**/*.*'], dest: 'build/', filter: 'isFile'}
+                    {expand: true, src: ['*.html', 'js/**/*.*', 'css/**/*.*','fonts/**/*.*', 'img/**/*.*', 'video/**/*.*'], dest: 'build/', filter: 'isFile'}
                 ]
             }
         },
@@ -96,9 +107,32 @@ module.exports = function(grunt) {
                 }
             }
         },
+
+        image: {                          // Task
+            dynamic: {
+                options: {
+                    pngquant: true,
+                    optipng: false,
+                    zopflipng: true,
+                    jpegRecompress: false,
+                    jpegoptim: true,
+                    mozjpeg: true,
+                    gifsicle: true,
+                    svgo: true
+                },
+                files: [{
+                    expand: true,                  // Enable dynamic expansion
+                    cwd: 'img/sprite_original/',                   // Src matches are relative to this path
+                    src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
+                    dest: 'img/sprite/'                  // Destination path prefix
+                }]
+            }
+        }
     });
 
     grunt.registerTask('default', ['concurrent']);
+    grunt.registerTask('png', ['image']);
+    grunt.registerTask('productive', ['concat', 'sass', 'autoprefixer', 'cssmin', 'uglify', 'copy']);
 
     //grunt.registerTask('productive', ['sass', 'autoprefixer', 'cssmin', 'concat', 'uglify', 'copy']);
 

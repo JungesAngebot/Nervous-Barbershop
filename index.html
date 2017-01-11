@@ -5,40 +5,226 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Burst</title>
+    <title>Ungefiltert | funk</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/scripts.js"></script>
+
+    <!-- Social-feed css -->
+    <link href="bower_components/social-feed/css/jquery.socialfeed.css" rel="stylesheet" type="text/css">
+    <!-- font-awesome for social network icons -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="ungefiltert stellt vier Facebook Feeds, vier Blickwinkel, vier Weltbilder nebeneinander und beantwortet die Frage, wie Filterblasen unsere Meinungsbildung beeinflussen.">
+    <meta itemtype="http://schema.org/WebPage" itemscope="itemscope">
+    <meta itemprop="name" content="Ungefiltert | funk">
+    <meta itemprop="description" content="ungefiltert stellt vier Facebook Feeds, vier Blickwinkel, vier Weltbilder nebeneinander und beantwortet die Frage, wie Filterblasen unsere Meinungsbildung beeinflussen.">
+    <meta itemprop="image" content="http://ungefiltert.funk.net/img/funk_meta.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ungefiltert | funk">
+    <meta name="twitter:description" content="ungefiltert stellt vier Facebook Feeds, vier Blickwinkel, vier Weltbilder nebeneinander und beantwortet die Frage, wie Filterblasen unsere Meinungsbildung beeinflussen.">
+    <meta name="twitter:image" content="http://ungefiltert.funk.net/img/funk_meta.jpg">
+    <meta property="og:title" content="Ungefiltert | funk">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://ungefiltert.funk.net/">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:image" content="http://ungefiltert.funk.net/img/funk_meta.jpg">
+    <meta property="og:site_name" content="Ungefiltert | funk">
+    <meta property="og:description" content="ungefiltert stellt vier Facebook Feeds, vier Blickwinkel, vier Weltbilder nebeneinander und beantwortet die Frage, wie Filterblasen unsere Meinungsbildung beeinflussen.">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/img/favicons/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="/img/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#3d3c3b">
+    <meta name="apple-mobile-web-app-title" content="Ungefiltert | funk">
+    <meta name="application-name" content="Ungefiltert | funk">
+    <meta name="theme-color" content="#262525">
+
+    <script type="text/javascript" src="//script.ioam.de/iam.js"></script>
+    <script type="text/javascript">
+        var isStringDetected = function(value) {
+            var regexp = new RegExp(value, 'gi')
+            return (regexp.test(navigator.appVersion) || regexp.test(navigator.userAgent)) ? true : false
+        }
+        var isTablet = function () {
+            return (isStringDetected('iPad|Windows NT|Kindle|PlayBook') || (isStringDetected('Android') && !isStringDetected('Mobile'))) ? true : false
+        }
+        var isMobile = (!isTablet() && 'undefined' != typeof window.orientation)
+        iam_data = {
+            st: (isMobile ? 'mobjunge' : 'jungesan'),
+            cp: (isMobile ? 'Seite/mobil' : 'Seite/stationaer')
+        }
+        iom.c(iam_data, 1)
+    </script>
+    <script type="text/javascript" src="//tag.aticdn.net/570592/smarttag.js"></script>
 </head>
 <body>
-    <div class="nav">
-        <img class="logo" src="img/funk-logo.svg" alt="funk logo">
-    </div>
-    <div class="content-container">
-        <h1>Burst</h1>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+<script type="text/javascript">
+    var tag = new ATInternet.Tracker.Tag();
+    tag.page.set({
+        name: 'Startseite',
+        chapter1: 'Ungefiltert',
+        level2: 4
+    });
+    tag.customVars.set({
+        site: {
+            1: 'Ungefiltert-Startseite',
+            2: '7',
+            3: 'Ungefiltert-Startseite',
+            4: (isMobile ? '2' : '1')
+        }
+    });
+    tag.dispatch();
+</script>
 
-        <div class="button-container">
-            <button class="links active" data-id="links" data-active="true">Links</button>
-            <button class="neutral active" data-id="neutral" data-active="true">Neutral</button>
-            <button class="rechts active" data-id="rechts" data-active="true">Rechts</button>
+    <div class="nav">
+        <a href="index.html">
+            <img class="logo" src="img/funk-logo.svg" alt="funk logo">
+        </a>
+        <ul>
+            <li><a href="filterblase.html">Was ist eine Filterblase?</a></li>
+            <li><a href="funklife.html">Über Ungefiltert</a></li>
+        </ul>
+        <div class="burger-icon">
+            <i class="icon icon_hamburger"></i>
+        </div>
+    </div>
+    <div class="off-canvas">
+        <ul>
+            <li><a href="filterblase.html">Was ist eine Filterblase?</a></li>
+            <li><a href="funklife.html">Über Ungefiltert</a></li>
+        </ul>
+    </div>
+    <div id="fullpage">
+        <div class="section" id="header_section">
+            <!-- data-vide-bg="video/bubble_animation" data-vide-options="loop: true, muted: true, position: 50% 50%" -->
+
+           <!-- <div class="overlay"></div>-->
+
+            <div class="content-container">
+                <h1>Ungefiltert</h1>
+               <p>
+                   Soziale Netzwerke wie Facebook helfen uns dabei die tägliche Informationsflut zu bündeln. Sie lernen aus unserem Verhalten und zeigen, was für uns relevant ist. Dabei gehen andere Blickwinkel jedoch verloren - ohne dass wir es merken. Wie wirken sich diese Filterblasen auf unsere Meinungsbildung aus?
+               </p>
+                <div class="scroll-down">
+                    <i class="icon icon_scroll-down"></i>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="content-container">
+                <p style="text-align: center;">Ein Klick auf den Button blendet den Feed aus. Um ihn wieder einzublenden, klicke nochmal.</p>
+                <div class="button-container">
+                    <button class="links active" data-id="links" data-active="true">Links</button>
+                    <button class="mitteLinks active" data-id="mitteLinks" data-active="true">Mitte Links</button>
+                    <button class="mitteRechts active" data-id="mitteRechts" data-active="true">Mitte Rechts</button>
+                    <button class="rechts active" data-id="rechts" data-active="true">Rechts</button>
+                </div>
+            </div>
+
+            <div class="slick-slider-for-feeds">
+                <div class="feed links ">
+                    <div class="feed-scroll-wrapper">
+                        <div id="feedLinks"></div>
+                    </div>
+                </div>
+
+                <div class="feed mitteLinks ">
+                    <div class="feed-scroll-wrapper">
+                        <div id="feedMitteLinks"></div>
+                    </div>
+                </div>
+
+                <div class="feed mitteRechts ">
+                    <div class="feed-scroll-wrapper">
+                        <div id="feedMitteRechts"></div>
+                    </div>
+                </div>
+
+                <div class="feed rechts ">
+                    <div class="feed-scroll-wrapper">
+                        <div id="feedRechts"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="content-container poll-centered big">
+
+                <div class="iframes">
+                    <iframe src="https://widget.civey.com/196"  height="500" width="400" frameborder="0"></iframe>
+                    <iframe src="https://widget.civey.com/197"  height="500" width="400" frameborder="0"></iframe>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="content-container big">
+
+                <div class="content-left">
+                    <h1>Wie sieht die Welt für jemand anderen aus?</h1>
+                    <p>Facebook wird immer wichtiger für die politische Debatte: Zumindest ist das die Lehre, die aus der US-Wahl gezogen wird. Über Soziale Netzwerke wurden Nachrichten aus unseriösen Quellen verteilt und so Gerüchte und sogar Lügen gestreut.</p>
+                    <h3>Aber noch mal einen Schritt zurück:</h3>
+                    <p>Unser Facebook Feed ist voll von Posts unserer Freunde, deren Bilder wir kommentieren und deren Links wir anklicken. Dazu kommen Pages, die wir gelikt und Werbung von Produkten, die wir zuletzt online geshoppt haben. So lernt Facebook, was wir mögen, wie wir die Welt sehen, und zeigt uns fortan auch nur noch genau das. Dadurch befinden wir uns in einer „Filterblase“, die andere Meinungen auslässt und unsere eigene Meinung scheinbar hervorhebt.<br>
+                        Filterblasen sind <a href="filterblase.html#vorteile">nicht ausschließlich schlecht!</a> Sie lenken den Blick aber in eine bestimmte Richtung. Um die eigene Blase für einen Moment zu verlassen, haben wir modellhaft vier verschiedene Facebook Feeds zusammengestellt. Im Interesse einer sauberen Darstellung wird pro Stream jeweils ausschließlich eine politische Strömung abgebildet.<br>
+                        <a href="funklife.html#quellen">Jeder Feed besteht aus der gleichen Anzahl an Quellen</a>. Hierbei handelt es sich um Medien, Parteien oder politische Persönlichkeiten, die nach dem folgenden Verständnis von
+                        <a href="https://www.bpb.de/nachschlagen/lexika/pocket-politik/16547/rechts-links-schema">„Links“ und „Rechts“</a> eingeordnet wurden:
+                    </p>
+
+                    <h3>Links:</h3>
+                    <p>Parteien, Medien und Persönlichkeiten, die besonders Gleichheit und Gerechtigkeit in der Gesellschaft fordern und die Aufgabe des Staates in der sozialen Absicherung und der Solidarisierung mit Minderheiten und Schwächeren sehen.
+                    </p>
+                    <h3>Rechts:</h3>
+                    <p>Parteien, Medien und Persönlichkeiten, die Freiheit und das Nationale als besonders wichtig erachten und staatliche Bevormundung reduzieren wollen.
+                    </p>
+                    <h3>Mitte Rechts/Mitte Links:</h3>
+                    <p>Parteien, Medien und Persönlichkeiten, die sich in der Mitte der beiden Extreme wiederfinden und den aktuellen Zustand der Demokratie grundsätzlich gut finden.
+                    </p>
+
+
+                </div>
+                <div class="content-right">
+                    <div class="spritespin Text_1_Filterblase"></div>
+
+                    <a href="filterblase.html">
+                        <div style="cursor: pointer; background: #3b3a39; text-align: center; padding: 20px; max-width: 300px; color: #fff; margin: 0 auto;">
+                            Was ist eine Filterblase
+                            <i style="font-size: 30px; line-height: 0" class="icon icon_arrow-right"></i>
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
         </div>
     </div>
 
-<div class="slick-slider-for-feeds">
-    <div class="feed links">LINKS
-    </div>
-
-    <div class="feed neutral">NEUTRAL
-    </div>
-
-    <div class="feed rechts">RECHTS
-    </div>
-</div>
-
     <div class="footer">
         <a href="https://www.funk.net/impressum">Impressum</a>
-        <a href="https://www.funk.net/datenschutz">Datenschutz</a>
+        <a href="datenschutz.html">Datenschutz</a>
     </div>
-<script src="//localhost:35729/livereload.js"></script>
+
+
+    <script>
+        $( document ).ready(function() {
+            $('.Text_1_Filterblase').spritespin({
+                width: 800,
+                height: 800,
+                source: SpriteSpin.sourceArray('img/sprite/Text_1/Text1_Filterblase_{frame}.png', { frame: [1,4], digits: 3 }),
+                sense: 0,
+                behavior: '',
+                preloadCount: 1,
+                frameTime: 1000,
+                responsive: true,
+                renderer: 'image'
+            });
+        });
+    </script>
 </body>
 </html>

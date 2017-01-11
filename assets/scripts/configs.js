@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+
+
     $('.slick-slider-for-feeds').slick({
         infinite: false,
         lazyLoad: 'progressive',
@@ -9,6 +11,7 @@ $(document).ready(function() {
         slidesToScroll: 1,
         touchThreshold: 10,
         speed: 150,
+        //centerMode: true,
         prevArrow: '<i class="slick-prev-custom blop icon icon_arrow-left"></i>',
         nextArrow: '<i class="slick-next-custom blop icon icon_arrow-right"></i>',
         //mobileFirst: true,
@@ -49,32 +52,27 @@ $(document).ready(function() {
         ]
     });
 
+    new sliderController().resizeSlider();
 
-    // Filter function
+    new socialFeedController().setSocialFeeds();
 
-    $('button').on('click', function() {
-        var filter = "";
-
-        //Toggle active/inactive on button
-        $(this).toggleClass("active inactive");
-        if($(this).attr("data-active") == "true"){
-            $(this).attr('data-active','false');
-        }
-        else if($(this).attr("data-active") == "false"){
-            $(this).attr('data-active','true');
-        }
-
-        // get all active buttons
-        $('button').each(function(i, obj) {
-            if($(this).attr("data-active") == "true"){
-                filter = filter + "." + $(obj).attr("data-id") + ", ";
-            }
-        });
-        filter = filter.slice(0,-2);
-
-        //Filter slider
-        $('.slick-slider-for-feeds').slick('slickUnfilter');
-        $('.slick-slider-for-feeds').slick('slickFilter', filter);
+    $('.burger-icon').on('click', function() {
+        $('.off-canvas').toggleClass('right');
+        $(this).find('i').toggleClass('icon_hamburger icon_close');
+        $('.nav').toggleClass('fixed');
     });
 
+    //FULLPAGE
+    $('#fullpage').fullpage({
+        normalScrollElements: '.feed-scroll-wrapper',
+        normalScrollElementTouchThreshold: 10,
+        verticalCentered: true,
+        fixedElements: '.nav, .footer',
+        paddingTop: '70px',
+        paddingBottom: '40px',
+        scrollOverflow: false,
+        autoScrolling: false,
+        fitToSection: false,
+    });
+    
 });

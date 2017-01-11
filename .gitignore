@@ -9,3 +9,5 @@ css/style.css
 js/scripts.js
 
 *.map
+
+build/
